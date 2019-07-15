@@ -10,10 +10,10 @@
 <body>
     <div class="reg">
         <div class="reg2">
-                <a href="reg.html#form1"><h1>Регистрация</h1></a>
+            <a href="#form1"><h1>Регистрация</h1></a>
         </div>
     </div>
-    <div class="characters">
+   <div class="characters">
         <div class="character">
             <img src="images/goblin.png">
             <h1>Гоблин</h1>
@@ -40,5 +40,33 @@
             <a href="aut.html#formaut"><h1>Играть</h1></a>
         </div>
     </div>
+    <a href="#x" class="overlay" id="form1"></a>
+    <form class="modal" action="">
+        <input name="emailaddress" id="email" placeholder="Укажите ваш Email:" class="email" type="email" required />
+        <input name="name" id="login" placeholder="Укажите имя персонажа:" class="name" required />
+        <input name="password" id="password" placeholder="Укажите ваш пароль:" class="name" type="password" required />
+        <input name="password2" id="password2" placeholder="Повторите пароль:" class="name" type="password" required />
+        <input name="submit" onClick="window.location='#form2'" class="btn" type="submit" value="Далее" />
+    </form>
+    <a href="#x" class="overlay" id="form2"></a>
+    <form class="modal" action="">
+        <img src="images/dvorf.gif">
+        <label for="rasa">Выберите расу:</label>
+        <select name="color" id="rasa">
+            <option value="person">Человек</option>
+            <option value="goblin">Гоблин</option>
+            <option value="dvorf">Дворф</option>
+            <option value="elf">Эльф</option>
+        </select>
+        <label for="class">Выберите класс:</label>
+        <select name="color" id="class">
+            <option value="voin">Воин</option>
+            <option value="mag">Маг</option>
+            <option value="vor">Вор</option>
+            <option value="hunter">Охотник</option>
+            <option value="rev">Целитель</option>
+        </select>
+        <input name="submit" class="btn" type="submit" value="Зарегистрироваться" />
+    </form>
 </body>
 </html>

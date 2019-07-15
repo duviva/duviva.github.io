@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background: url('../images/background.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    margin: auto;
+    background-repeat: no-repeat;
+}
